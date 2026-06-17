@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porra Mundial 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-bg-glow"></div>
+    <div class="header-inner">
+      <div class="header-brand">
+        <svg class="trophy-svg" viewBox="0 0 60 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 4L36 18H50L39 27L43 41L30 32L17 41L21 27L10 18H24L30 4Z" fill="#D4AF37" opacity=".9"/>
+          <rect x="24" y="44" width="12" height="14" rx="2" fill="#D4AF37" opacity=".8"/>
+          <rect x="18" y="58" width="24" height="5" rx="2.5" fill="#D4AF37"/>
+          <path d="M10 18C6 18 2 14 2 10V6H10" stroke="#D4AF37" stroke-width="2" fill="none" opacity=".6"/>
+          <path d="M50 18C54 18 58 14 58 10V6H50" stroke="#D4AF37" stroke-width="2" fill="none" opacity=".6"/>
+        </svg>
+        <div>
+          <h1>Porra Mundial 2026</h1>
+          <p class="header-sub">USA &middot; CANADA &middot; MEXICO &nbsp;&nbsp;|&nbsp;&nbsp; 11 JUN &ndash; 19 JUL 2026</p>
+        </div>
+      </div>
+      <div class="header-stats" id="header-stats">
+        <div class="hstat"><span class="hstat-val" id="stat-part">—</span><span class="hstat-lbl">Jugadores</span></div>
+        <div class="hstat"><span class="hstat-val" id="stat-partidos">—</span><span class="hstat-lbl">Partidos</span></div>
+      </div>
+    </div>
+    <div class="header-update-bar">
+      <span id="ultima-actualizacion">Cargando...</span>
+    </div>
+  </header>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-inner">
+      <button class="tab-btn active" data-tab="clasificacion">
+        <span class="tab-icon">🏅</span> Clasificación
+      </button>
+      <button class="tab-btn" data-tab="partidos">
+        <span class="tab-icon">⚽</span> Partidos
+      </button>
+      <button class="tab-btn" data-tab="detalle">
+        <span class="tab-icon">👤</span> Mi detalle
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MAIN ── -->
+  <main>
+
+    <!-- TAB: Clasificación -->
+    <section id="tab-clasificacion" class="tab-content active">
+      <div class="section-title">Clasificación General</div>
+
+      <!-- Podio top 3 -->
+      <div class="podium" id="podium"></div>
+
+      <!-- Tabla completa -->
+      <div class="ranking-card">
+        <div class="ranking-head">
+          <span>#</span><span>Participante</span>
+          <span class="col-center">Signos</span>
+          <span class="col-center">Exactos</span>
+          <span class="col-right">Puntos</span>
+        </div>
+        <div id="ranking-body"></div>
+      </div>
+
+      <div class="scoring-legend">
+        <span class="legend-chip">✓ Signo correcto = <strong>1 pt</strong></span>
+        <span class="legend-chip">🎯 Marcador exacto = <strong>+1 pt</strong></span>
+      </div>
+    </section>
+
+    <!-- TAB: Partidos -->
+    <section id="tab-partidos" class="tab-content">
+      <div class="filtros-scroll" id="filtros-grupo"></div>
+      <div id="lista-partidos"></div>
+    </section>
+
+    <!-- TAB: Detalle -->
+    <section id="tab-detalle" class="tab-content">
+      <div class="select-wrap">
+        <select id="persona-select">
+          <option value="">— Selecciona un participante —</option>
+        </select>
+      </div>
+      <div id="detalle-persona"></div>
+    </section>
+
+  </main>
+
+  <!-- ── MODAL PRONÓSTICOS ── -->
+  <div id="modal-overlay" class="modal-overlay" onclick="cerrarModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div id="modal-titulo" class="modal-titulo"></div>
+        <button class="modal-close" onclick="cerrarModal()">✕</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="datos/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

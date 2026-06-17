@@ -1,0 +1,78 @@
+2026-06-17 08:47:03  INFO      === Inicio actualización ===
+2026-06-17 08:47:04  ERROR     Error al conectar con la API: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Authority Key Identifier (_ssl.c:1032)>
+2026-06-17 08:48:44  INFO      === Inicio actualización ===
+2026-06-17 08:48:44  ERROR     Falta la API key. Edita actualizar.py o define FOOTBALL_API_KEY.
+2026-06-17 08:49:51  INFO      === Inicio actualización ===
+2026-06-17 08:49:51  ERROR     Falta la API key. Edita actualizar.py o define FOOTBALL_API_KEY.
+2026-06-17 08:51:21  INFO      === Inicio actualización ===
+2026-06-17 08:51:21  ERROR     Error al conectar con la API: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Authority Key Identifier (_ssl.c:1032)>
+2026-06-17 08:51:53  INFO      === Inicio actualización ===
+2026-06-17 08:51:53  INFO        Resultado: México 2-0 Sudáfrica
+2026-06-17 08:51:53  INFO        Resultado: South Korea 2-1 Rep. Checa
+2026-06-17 08:51:53  INFO        Resultado: EE.UU. 4-1 Paraguay
+2026-06-17 08:51:53  INFO        Resultado: Qatar 1-1 Suiza
+2026-06-17 08:51:53  INFO        Resultado: Brasil 1-1 Marruecos
+2026-06-17 08:51:53  INFO        Resultado: Haití 0-1 Escocia
+2026-06-17 08:51:53  INFO        Resultado: Australia 2-0 Turquía
+2026-06-17 08:51:53  INFO        Resultado: Alemania 7-1 Curazao
+2026-06-17 08:51:53  INFO        Resultado: P. Bajos 2-2 Japón
+2026-06-17 08:51:53  INFO        Resultado: C. Marfil 1-0 Ecuador
+2026-06-17 08:51:53  INFO        Resultado: Suecia 5-1 Túnez
+2026-06-17 08:51:53  INFO        Resultado: España 0-0 Cape Verde Islands
+2026-06-17 08:51:53  INFO        Resultado: Bélgica 1-1 Egipto
+2026-06-17 08:51:53  INFO        Resultado: Arabia S. 1-1 Uruguay
+2026-06-17 08:51:53  INFO        Resultado: Irán 2-2 N. Zelanda
+2026-06-17 08:51:53  INFO        Resultado: Francia 3-1 Senegal
+2026-06-17 08:51:53  INFO        Resultado: Irak 1-4 Noruega
+2026-06-17 08:51:53  INFO        Resultado: Argentina 3-0 Argelia
+2026-06-17 08:51:53  INFO        Resultado: Austria 3-1 Jordania
+2026-06-17 08:51:53  INFO      Partidos finalizados en la API: 19
+2026-06-17 08:51:53  WARNING   Partidos sin mapeo: South Korea vs Rep. Checa, EE.UU. vs Paraguay, Australia vs Turquía, España vs Cape Verde Islands
+2026-06-17 08:51:53  INFO      === Fin: 15 resultados guardados ===
+2026-06-17 14:26:20  INFO      === Inicio actualización ===
+2026-06-17 14:26:21  INFO        Resultado: México 2-0 Sudáfrica
+2026-06-17 14:26:21  INFO        Resultado: Corea del Sur 2-1 Rep. Checa
+2026-06-17 14:26:21  INFO        Resultado: Canadá 1-1 Bosnia-Herzegovina
+2026-06-17 14:26:21  INFO        Resultado: EE.UU. 4-1 Paraguay
+2026-06-17 14:26:21  INFO        Resultado: Qatar 1-1 Suiza
+2026-06-17 14:26:21  INFO        Resultado: Brasil 1-1 Marruecos
+2026-06-17 14:26:21  INFO        Resultado: Haití 0-1 Escocia
+2026-06-17 14:26:21  INFO        Resultado: Australia 2-0 Turquía
+2026-06-17 14:26:21  INFO        Resultado: Alemania 7-1 Curazao
+2026-06-17 14:26:21  INFO        Resultado: P. Bajos 2-2 Japón
+2026-06-17 14:26:21  INFO        Resultado: C. Marfil 1-0 Ecuador
+2026-06-17 14:26:21  INFO        Resultado: Suecia 5-1 Túnez
+2026-06-17 14:26:21  INFO        Resultado: España 0-0 C. Verde
+2026-06-17 14:26:21  INFO        Resultado: Bélgica 1-1 Egipto
+2026-06-17 14:26:21  INFO        Resultado: Arabia S. 1-1 Uruguay
+2026-06-17 14:26:21  INFO        Resultado: Irán 2-2 N. Zelanda
+2026-06-17 14:26:21  INFO        Resultado: Francia 3-1 Senegal
+2026-06-17 14:26:21  INFO        Resultado: Irak 1-4 Noruega
+2026-06-17 14:26:21  INFO        Resultado: Argentina 3-0 Argelia
+2026-06-17 14:26:21  INFO        Resultado: Austria 3-1 Jordania
+2026-06-17 14:26:21  INFO      Partidos finalizados en la API: 20
+2026-06-17 14:26:21  WARNING   Partidos sin mapeo: Canadá vs Bosnia-Herzegovina
+2026-06-17 14:26:21  INFO      === Fin: 19 resultados guardados ===
+2026-06-17 14:57:03  INFO      === Inicio actualización ===
+2026-06-17 14:57:04  INFO        Resultado: México 2-0 Sudáfrica
+2026-06-17 14:57:04  INFO        Resultado: Corea del Sur 2-1 Rep. Checa
+2026-06-17 14:57:04  INFO        Resultado: Canadá 1-1 Bosnia
+2026-06-17 14:57:04  INFO        Resultado: EE.UU. 4-1 Paraguay
+2026-06-17 14:57:04  INFO        Resultado: Qatar 1-1 Suiza
+2026-06-17 14:57:04  INFO        Resultado: Brasil 1-1 Marruecos
+2026-06-17 14:57:04  INFO        Resultado: Haití 0-1 Escocia
+2026-06-17 14:57:04  INFO        Resultado: Australia 2-0 Turquía
+2026-06-17 14:57:04  INFO        Resultado: Alemania 7-1 Curazao
+2026-06-17 14:57:04  INFO        Resultado: P. Bajos 2-2 Japón
+2026-06-17 14:57:04  INFO        Resultado: C. Marfil 1-0 Ecuador
+2026-06-17 14:57:04  INFO        Resultado: Suecia 5-1 Túnez
+2026-06-17 14:57:04  INFO        Resultado: España 0-0 C. Verde
+2026-06-17 14:57:04  INFO        Resultado: Bélgica 1-1 Egipto
+2026-06-17 14:57:04  INFO        Resultado: Arabia S. 1-1 Uruguay
+2026-06-17 14:57:04  INFO        Resultado: Irán 2-2 N. Zelanda
+2026-06-17 14:57:04  INFO        Resultado: Francia 3-1 Senegal
+2026-06-17 14:57:04  INFO        Resultado: Irak 1-4 Noruega
+2026-06-17 14:57:04  INFO        Resultado: Argentina 3-0 Argelia
+2026-06-17 14:57:04  INFO        Resultado: Austria 3-1 Jordania
+2026-06-17 14:57:04  INFO      Partidos finalizados en la API: 20
+2026-06-17 14:57:04  INFO      === Fin: 20 resultados guardados ===
