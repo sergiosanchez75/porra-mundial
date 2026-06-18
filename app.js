@@ -8,6 +8,14 @@ function init() {
     ? '🟢 Actualizado: ' + new Date(ts).toLocaleString('es-ES')
     : '⚪ Sin resultados todavía — ejecuta actualizar.py para sincronizar con la API';
 
+  const updateInfo = document.getElementById('update-info');
+  if (updateInfo) {
+    updateInfo.textContent = ts
+      ? 'Datos actualizados el ' + new Date(ts).toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' })
+      : 'Sin actualizar';
+    updateInfo.style.cssText = 'font-size:0.78rem;color:#888;text-align:right;margin:-6px 0 14px;padding-right:2px;';
+  }
+
   // Header stats
   const jugados = Object.keys(DATOS.resultados).length;
   const total   = DATOS.partidos.length;
@@ -255,7 +263,8 @@ function renderDetallePersona(persona) {
       '<div style="text-align:center">Pts</div>' +
     '</div>';
 
-  DATOS.partidos.forEach(partido => {
+  const partidosPorFecha = [...DATOS.partidos].sort((a, b) => a.fecha.localeCompare(b.fecha));
+  partidosPorFecha.forEach(partido => {
     const a = (DATOS.pronosticos.apuestas[persona] || {})[partido.id];
     const r = DATOS.resultados[partido.id];
 
