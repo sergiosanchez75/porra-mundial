@@ -155,6 +155,22 @@ def escribir_datos(datos):
     DATA_JS_PATH.write_text(js, encoding="utf-8")
 
 
+def git_push():
+    import subprocess
+    try:
+        subprocess.run(["git", "add", "datos/data.js"], cwd=str(SCRIPT_DIR), check=True)
+        diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=str(SCRIPT_DIR))
+        if diff.returncode == 0:
+            log.info("Git: sin cambios nuevos, no se hace push")
+            return
+        fecha = datetime.now().strftime("%Y-%m-%d")
+        subprocess.run(["git", "commit", "-m", f"resultados {fecha}"], cwd=str(SCRIPT_DIR), check=True)
+        subprocess.run(["git", "-c", "http.sslVerify=false", "push", "origin", "master"], cwd=str(SCRIPT_DIR), check=True)
+        log.info("Git push OK")
+    except Exception as exc:
+        log.error("Git push fallido: %s", exc)
+
+
 def main():
     log.info("=== Inicio actualización ===")
 
@@ -184,6 +200,11 @@ def main():
     for (local, visitante), (gl, gv) in resultados_api.items():
         pid = lookup.get((local, visitante))
         if pid is None:
+            # La API puede tener local/visitante al revés; probamos invertido
+            pid = lookup.get((visitante, local))
+            if pid is not None:
+                gl, gv = gv, gl
+        if pid is None:
             sin_mapeo.append(f"{local} vs {visitante}")
             continue
         datos["resultados"][str(pid)] = {"gl": gl, "gv": gv}
@@ -195,6 +216,7 @@ def main():
     escribir_datos(datos)
     log.info("=== Fin: %d resultados guardados ===", actualizados)
     print(f"OK: {actualizados} resultados actualizados. Log: {LOG_PATH}")
+    git_push()
 
 
 if __name__ == "__main__":
