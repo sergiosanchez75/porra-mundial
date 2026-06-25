@@ -216,7 +216,8 @@ def main():
     escribir_datos(datos)
     log.info("=== Fin: %d resultados guardados ===", actualizados)
     print(f"OK: {actualizados} resultados actualizados. Log: {LOG_PATH}")
-    git_push()
+    if not os.getenv("GITHUB_ACTIONS"):
+        git_push()
 
 
 if __name__ == "__main__":
