@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * *'   # 06:00 UTC = 08:00 hora España (verano)
   workflow_dispatch:        # permite lanzarlo manualmente desde GitHub
 
+permissions:
+  contents: write
+
 jobs:
   actualizar:
     runs-on: ubuntu-latest
