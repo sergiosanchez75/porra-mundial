@@ -1,5 +1,5 @@
 var DATOS = {
-  "ultimaActualizacion": "2026-06-26T13:34:30",
+  "ultimaActualizacion": "2026-06-27T11:16:27",
   "partidos": [
     {
       "id": 1,
@@ -890,6 +890,30 @@ var DATOS = {
     "24": {
       "gl": 0,
       "gv": 0
+    },
+    "53": {
+      "gl": 1,
+      "gv": 4
+    },
+    "54": {
+      "gl": 5,
+      "gv": 0
+    },
+    "47": {
+      "gl": 0,
+      "gv": 1
+    },
+    "48": {
+      "gl": 0,
+      "gv": 0
+    },
+    "42": {
+      "gl": 1,
+      "gv": 5
+    },
+    "41": {
+      "gl": 1,
+      "gv": 1
     }
   },
   "pronosticos": {
