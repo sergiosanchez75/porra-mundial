@@ -1,5 +1,5 @@
 var DATOS = {
-  "ultimaActualizacion": "2026-11-14T12:53:24",
+  "ultimaActualizacion": "2026-11-15T13:21:13",
   "partidos": [
     {
       "id": 1,
